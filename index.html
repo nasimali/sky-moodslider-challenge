@@ -1,72 +1,72 @@
-<head>
-    <title>Nasim Ali</title>
-    <link type="image/png" rel="icon" href="./resources/mainIcon.jpeg">
-    <link type="text/css" rel="stylesheet" href="./resources/bootstrap.min.css">
-    <link type="text/css" rel="stylesheet" href="./resources/custom-index.css">
-    <script src="./resources/jquery.min.js"></script>
-    <script src="./resources/bootstrap.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-    <div id="main-content" class="container-fluid">
-            <h1 class="textCenteredIndex">Banner</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mood Slider</title>
+    <link type="image/png" rel="icon" href="./resources/images/sky-logo.png">
+    <link type="text/css" rel="stylesheet" href="./resources/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./resources/css/custom.css">
+  </head>
+  <body>
+    <div class="container-fluid">
 
-            <div class="col-xs-12"><label>Section 1</label></div>
+      <div class="row gradient" style="margin-top:1rem; margin-bottom:1rem; margin-left:1rem;">
+        <div class="col-md-2"><div class="well inheritback"><img id="logo-image"src="./resources/images/sky-logo.jpg"><br></div></div>
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-12"><div class="well inheritback"><h2>Sky Movie Recommender</h2></div></div>
+          </div>
+          <div class="row">
+            <div class="col-md-12"><div class="well inheritback"><p>Moodslider | <span id="file-upload-button">Upload</span></p></div></div>
+          </div>
+          <input type="file" id="file-uploader"  name="file-uploader"/>
+        </div>
+      </div>
 
-            <div class="col-xs-6"><label>Section 1</label></div>
-            <div class="col-xs-6"><label>Section 2</label></div>
+      <div class="row">
+        <label class="col-md-2 moodLabels">Agitated</label>
+        <input class="col-md-8" type="range" min="1" max="3" value="2" class="slider" id="agitated-calm">
+        <label class="col-md-2 moodLabels">Calm</label>
+      </div>
 
-            <div class="col-xs-4"><label>Section one</label></div>
-            <div class="col-xs-4"><label>Section two</label></div>
-            <div class="col-xs-4"><label>Section three</label></div>
+      <div class="slidecontainer row">
+        <label class="col-md-2 moodLabels">Happy</label>
+        <input class="col-md-8" type="range" min="1" max="3" value="2" class="slider" id="happy-sad">
+        <label class="col-md-2 moodLabels">Sad</label>
+      </div>
 
-            <div class="col-xs-3"><label>Section 1</label></div>
-            <div class="col-xs-3"><label>Section 2</label></div>
-            <div class="col-xs-3"><label>Section 3</label></div>
-            <div class="col-xs-3"><label>Section 4</label></div>
+      <div class="slidecontainer row">
+        <label class="col-md-2 moodLabels">Tired</label>
+        <input class="col-md-8" type="range" min="1" max="3" value="2" class="slider" id="tired-wide awake">
+        <label class="col-md-2 moodLabels">Wide Awake</label>
+      </div>
 
-            <div class="col-xs-2"><label>Section 1</label></div>
-            <div class="col-xs-2"><label>Section 2</label></div>
-            <div class="col-xs-2"><label>Section 3</label></div>
-            <div class="col-xs-2"><label>Section 4</label></div>
-            <div class="col-xs-2"><label>Section 5</label></div>
-            <div class="col-xs-2"><label>Section 6</label></div>
+      <div class="slidecontainer row">
+          <label class="col-md-2 moodLabels">Scared</label>
+          <input class="col-md-8" type="range" min="1" max="3" value="2" class="slider" id="scared-fearless">
+          <label class="col-md-2 moodLabels">Fearless</label>
+      </div>
 
-            <div class="col-xs-1"><label>Section 1</label></div>
-            <div class="col-xs-1"><label>Section 2</label></div>
-            <div class="col-xs-1"><label>Section 3</label></div>
-            <div class="col-xs-1"><label>Section 4</label></div>
-            <div class="col-xs-1"><label>Section 5</label></div>
-            <div class="col-xs-1"><label>Section 6</label></div>
-            <div class="col-xs-1"><label>Section 7</label></div>
-            <div class="col-xs-1"><label>Section 8</label></div>
-            <div class="col-xs-1"><label>Section 9</label></div>
-            <div class="col-xs-1"><label>Section 10</label></div>
-            <div class="col-xs-1"><label>Section 11</label></div>
-            <div class="col-xs-1"><label>Section 12</label></div>
-            
-            <div class="col-md-2"><label>Section 1</label></div>
-            <div class="col-md-2"><label>Section 2</label></div>
-            <div class="col-md-2"><label>Section 3</label></div>
-            <div class="col-md-2"><label>Section 4</label></div>
-            <div class="col-md-2"><label>Section 5</label></div>
-            <div class="col-md-2"><label>Section 6</label></div>
-        
-            <div class="col-md-3"><label>Section 1</label></div>
-            <div class="col-md-3"><label>Section 2</label></div>
-            <div class="col-md-3"><label>Section 3</label></div>
-            <div class="col-md-3"><label>Section 4</label></div>
-            
-        
-            <div class="col-md-4"><label>Section 1</label></div>
-            <div class="col-md-4"><label>Section 2</label></div>
-            <div class="col-md-4"><label>Section 3</label></div>
-            
-            <div class="col-md-6"><label>Section 1</label></div>
-            <div class="col-md-6"><label>Section 2</label></div>
-            
+      <div class="row pictureContainers">
+        <div class="col-md-2 col-md-offset-1"><img class="imageContainers"id="image0" src="./resources/images/no-content.jpg"></div>
+        <div class="col-md-2"><img class="imageContainers" id="image1" src="./resources/images/no-content.jpg"></div>
+        <div class="col-md-2"><img class="imageContainers" id="image2" src="./resources/images/no-content.jpg"></div>
+        <div class="col-md-2"><img class="imageContainers" id="image3" src="./resources/images/no-content.jpg"></div>
+        <div class="col-md-2"><img class="imageContainers" id="image4" src="./resources/images/no-content.jpg"></div>
+      </div>
+
+      <div class="row pictureContainers">
+        <div class="col-md-2 col-md-offset-1"><label class="labelContainers" id="label0">No Content</label></div>
+        <div class="col-md-2"><label class="labelContainers" id="label1">No Content</label></div>
+        <div class="col-md-2"><label class="labelContainers" id="label2">No Content</label></div>
+        <div class="col-md-2"><label class="labelContainers" id="label3">No Content</label></div>
+        <div class="col-md-2"><label class="labelContainers" id="label4">No Content</label></div>
+      </div>
+
     </div>
-    
-    
-    
-</body>
+    <script src="./resources/js/jquery-3.3.1.min.js"></script>
+    <script src="./resources/js/main-code.js"></script>
+    <script src="./resources/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  </body>
+</html>

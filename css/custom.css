@@ -1,0 +1,46 @@
+h2{
+  text-align:center;
+  display: block;
+  line-height: 150%;
+  margin-right:15rem
+}
+
+.moodLabels{
+  text-align:center;
+  display: block;
+  line-height: 150%
+}
+
+.pictureContainers{
+  margin-top:1rem;
+  display: table;
+  margin: auto;
+}
+
+.imageContainers{
+  height:9.2rem;
+  width:9.2rem;
+}
+
+.labelContainers{
+  text-align:center;
+  display: block;
+  line-height: 150%;
+}
+
+#logo-image{
+  height:5.2rem;
+  width:8.2rem;
+}
+
+#file-upload-button{
+  cursor:pointer;
+}
+
+#file-upload-button:hover{
+  color: blue;
+}
+
+#file-uploader{
+  display:none;
+}
