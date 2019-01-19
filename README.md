@@ -1,5 +1,4 @@
 # Sky Moodslider
-<br />
 Author: Nasim Ali
 <br />
 Sky coding test
